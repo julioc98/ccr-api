@@ -1,0 +1,9 @@
+{
+  "name": "CCR-API Go",
+  "description": "Go CCR App",
+  "keywords": [
+    "go"
+  ],
+  "website": "http://github.com/julioc98/ccr-api",
+  "repository": "http://github.com/julioc98/ccr-api"
+}
