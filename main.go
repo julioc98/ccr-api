@@ -67,7 +67,7 @@ type Sys struct {
 // APIResponse CCR API Main response
 type APIResponse struct {
 	TimeInformations    *TimeInformations `json:"time"`
-	WeatherInformations *WeatherAPI       `json:"wether"`
+	WeatherInformations *WeatherAPI       `json:"weather"`
 }
 
 func sunset(lat, long string) (*TimeInformations, error) {
