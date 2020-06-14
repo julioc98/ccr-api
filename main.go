@@ -176,5 +176,10 @@ func main() {
 
 	api.HandleFunc("/", all).Methods(http.MethodGet)
 
-	log.Fatal(http.ListenAndServe(":8080", r))
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+	log.Printf(`%s listening on port: %s `, "CCR-API", port)
+	log.Fatal(http.ListenAndServe(":"+port, r))
 }
